@@ -77,15 +77,16 @@ function buildCharts(sample) {
     // 6. Create variables that hold the otu_ids, otu_labels, and sample_values.
     var otu_ids = firstSample.otu_ids
     var otuIdsSliced = otu_ids.slice(0,10).map(otu_ids => `OTU ${otu_ids}`).reverse();
-    console.log(otuIdsSliced)
-*********Chagne to OTULABELS
-    var otu_ids = firstSample.otu_ids
-    var otuIdsSliced = otu_ids.slice(0,10).map(otu_ids => `OTU ${otu_ids}`).reverse();
-    console.log(otuIdsSliced)
-********Change to Samplevalues   
-    var otu_ids = firstSample.otu_ids
-    var otuIdsSliced = otu_ids.slice(0,10).map(otu_ids => `OTU ${otu_ids}`).reverse();
-    console.log(otuIdsSliced)
+    console.log(otu_IdsSliced)
+
+    var otu_lables = resultForSample.otu_labels;
+    var otuLablesSliced = otu_lables.slice(0,10).reverse();
+    console.log(otuLablesSliced);
+
+    var sample_values = resultForSample.sample_values;
+    var sampleValuesSliced = sample_values.slice(0,10).reverse();
+    console.log(sampleValuesSliced);
+
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
@@ -93,14 +94,24 @@ function buildCharts(sample) {
     var yticks = 
 
     // 8. Create the trace for the bar chart. 
-    var barData = [
-      
-    ];
+    var barData = [{
+      x: sampleValuesSliced,
+      y: otuIdsSliced,
+      text: otuLablesSliced,
+      type: "bar",
+      orientation: 'h',
+      marker: {
+        color: 'MediumAquamarine',
+        opacity: 0.8,}
+    }];
     // 9. Create the layout for the bar chart. 
-    var barLayout = {
+    var barLayout = {  
+      title: "Top 10 Bacteria Cultures Found",
+      titlefont: {"size": 25},
+      xaxis: {title: "Sample Value"}
      
     };
     // 10. Use Plotly to plot the data with the layout. 
-    
+    Plotly.newPlot("bar", barData, barLayout);
   });
 }
