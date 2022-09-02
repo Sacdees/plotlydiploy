@@ -37,17 +37,17 @@ body {
   background-color: whitesmoke;
   }
   
-  #otu {
+  #bar {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 90;
   font-size: medium;
-  background-color: rgb(211, 136, 136);
+  background-color: rgb(206, 200, 200);
   }
   
-  #scrub{
+  #guage {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 90;
   font-size: medium;
-  background-color: rgb(236, 186, 186);
+  background-color: rgb(194, 186, 186);
   }
   
