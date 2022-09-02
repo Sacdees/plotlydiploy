@@ -86,7 +86,7 @@ function init() {
         y: yticks,           
         text: otuLabels.slice(0,10).reverse(),
         type: "bar",
-        orientation: "h"        
+        //orientation: "h"        
 
       }];
       // 9. Create the layout for the bar chart. 
