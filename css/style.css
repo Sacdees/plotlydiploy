@@ -5,7 +5,7 @@ body {
   }
   
   .jumbotron {
-    background-image: url(https://github.com/Sacdees/plotlydiploy/blob/main/css/bacteria.jpg);
+    background-image: url(css/bacteria.jpg);
     background-size: 100% 100%;
     opacity: .9;
     text-align: center;
