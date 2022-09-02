@@ -81,20 +81,19 @@ function init() {
   
       var yticks = otuIds.slice(0,10).map(id => "OTU " + id).reverse();
       console.log(yticks);
+      
       // 8. Create the trace for the bar chart. 
       var barData = [{
-        x: sampleValues.slice(0,10).reverse(),
-           
+        x: sampleValues.slice(0,10).reverse(),           
         text: otuLabels.slice(0,10).reverse(),
-        type: "bar"
-        
+        type: "bar"        
 
       }];
       // 9. Create the layout for the bar chart. 
       var barLayout = {
         title: "Top 10 Bacteria Cultrues Found",
-        titlefont: {"size": 25},
-        xaxis: {title: "Sample Value"}
+        titlefont: {"size": 20},
+        
         
       
       };
@@ -120,7 +119,7 @@ function init() {
       var bubbleLayout = {
         title: "Bacteria Cultures Per Sample",
         xaxis: {title: "OTU ID"},
-        yaxis: {title: "Sample Value"},
+     
         titlefont: {"size": 25},
         hovermode: "closest",
       };
