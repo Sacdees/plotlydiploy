@@ -5,11 +5,11 @@ body {
   }
   
   .jumbotron {
-    background-image: url('css\bacteria.jpg');
+    background-image: url(css\bacteria.jpg);
     background-size: 100% 100%;
     opacity: .9;
     text-align: center;
-    color: rgb(239, 241, 248);   
+    color: rgb(27, 65, 204);   
     
   } 
   
