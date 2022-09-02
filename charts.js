@@ -84,7 +84,7 @@ function init() {
       // 8. Create the trace for the bar chart. 
       var barData = [{
         x: sampleValues.slice(0,10).reverse(),
-        y: otuIds.slice(0.10).reverse(),
+        //y: otuIds.slice(0.10).reverse(),
         orienation: 'h',
         text: otuLabels.slice(0,10).reverse(),
         type: "bar"
