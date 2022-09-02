@@ -85,7 +85,7 @@ function init() {
       var barData = [{
         x: sampleValues.slice(0,10).reverse(),
         //y: otuIds.slice(0.10).reverse(),
-        orienation: 'h',
+        orienation: 'v',
         text: otuLabels.slice(0,10).reverse(),
         type: "bar"
         
