@@ -30,21 +30,21 @@ body {
       }
   
   
-  #know {
+  .know {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 90;
   font-size: medium;
   background-color: whitesmoke;
   }
   
-  #bar {
+  .bar {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 90;
   font-size: medium;
   background-color: rgb(206, 200, 200);
   }
   
-  #guage {
+  .guage {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 90;
   font-size: medium;
