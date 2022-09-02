@@ -83,7 +83,7 @@ function init() {
       console.log(yticks);
       // 8. Create the trace for the bar chart. 
       var barData = [{
-        x: sampleValues.slice(0,10).reverse(),
+        //x: sampleValues.slice(0,10).reverse(),
         y: otuIds.slice(0.10).reverse(),
         orienation: 'h',
         text: otuLabels.slice(0,10).reverse(),
@@ -113,7 +113,7 @@ function init() {
         marker: {
           size: sampleValues,
           color: otuIds,
-          colorscale: "Reds"
+          colorscale: "Greens"
         }
       }];
       console.log(bubbleData);
