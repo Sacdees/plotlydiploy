@@ -81,7 +81,7 @@ function init() {
   
       var yticks = otuIds.slice(0,10).map(id => "OTU " + id).reverse();
       console.log(yticks);
-      
+
       // 8. Create the trace for the bar chart. 
       var barData = [{
         x: sampleValues.slice(0,10).reverse(),           
@@ -173,7 +173,7 @@ function init() {
               { range: [2, 4], color: "orange" },
               { range: [4, 6], color: "yellow" },
               { range: [6, 8], color: "lime" },
-              { range: [8, 10], color: "blue" }]
+              { range: [8, 10], color: "green" }]
           }
         }
       ];
